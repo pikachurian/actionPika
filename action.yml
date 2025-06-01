@@ -91,16 +91,6 @@ runs:
       working-directory: ${{ inputs.path }}
       run: $PACKAGE_MANAGER install
     
-    - name: Permissions Stuff0 #pikaedit
-      shell: "bash"
-      working-directory: ${{ inputs.path }}
-      run: npm config set user 0
-
-    - name: Permissions Stuff1 #pika edit
-      shell: "bash"
-      working-directory: ${{ inputs.path }}
-      run: npm config set unsafe-perm true
-    
     - name: Build
       shell: "bash"
       working-directory: ${{ inputs.path }}
